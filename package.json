@@ -1,0 +1,14 @@
+{
+  "name": "package-name",
+  "version": "0.0.0",
+  "browser": "dist/index.html",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "yarn && spago build",
+    "serve": "spago build --watch & parcel public/index.html",
+    "build": "spago build && parcel build public/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}
